@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id = "overlay"class=""></div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img id= "menu_img" src="/images/icon-menu.svg" alt="">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " id="navul" style="width: 100%">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="features" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+              <img class="d-inline " id='image1' src="images/icon-arrow-down.svg" alt="">
+            </a>
+            <ul class="dropdown-menu " id="menu1">
+              <li>
+                <a class="dropdown-item" href="#">
+                <img class='icon' src="images/icon-todo.svg" alt="icon">
+                Todo List
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#">
+                <img class='icon' src="images/icon-calendar.svg" alt="icon">
+                Calendar
+              </a></li>
+              <li><a class="dropdown-item" href="#">
+                <img class='icon' src="images/icon-reminders.svg" alt="">
+                Reminders
+              </a></li>
+              <li><a class="dropdown-item" href="#">
+                <img class='icon' src="images/icon-planning.svg" alt="">
+                Planning
+              </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="company" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+              <img class="d-inline" id='image2' src="images/icon-arrow-down.svg" alt="">
+            </a>
+            <ul class="dropdown-menu"  id="menu2">
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item" id="login_btn">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item" id="reg_btn">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>   
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row d-flex justify-content-space-around align-items-center">
+      <div class="column col-12 col-md-6">
+        <h1>Make remote&nbsp;work</h1>
+
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+
+        <a href="#" id="lmore">Learn more</a>
+        <div id="marks">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="column col-12 col-md-6" id="main_img">
+
+      </div>
+    </div>
+  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
